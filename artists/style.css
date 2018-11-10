@@ -16,8 +16,13 @@ nav{
 }
 
 .artist {
-    position: center;
-    width: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+	text-align: center;
+	height: 30%;
+	width: 30%;
 }
 
 .middle {
@@ -27,12 +32,22 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
+}
+
+.logo{
+	width: 10%;
+	height: 10%;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 90%;
+	left: 0%;
 }
 
 .bio {
   color: white;
-  font-size: 32px;
+  font-size: auto;
   padding: 16px 32px;
 }
 
@@ -40,17 +55,47 @@ nav{
   opacity: 1;
 }
 
+.artist:hover .logo {
+  opacity: 1;
+}
+
 .image{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	width: 30%;
-	height: 30%;
 	opacity: 1;
 	transition: .5s ease;
 	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
 }
 
 .artist:hover .image {
   opacity: 0.3;
+}
+
+@media screen and (max-width: 998px) and (min-width: 400px){
+	.bio{
+		font-size: 16px;
+		padding: 0px 0px;
+	}
+	.image{
+		height: 250px;
+		width: 200px;
+	}
+	.middle{
+		opacity: 1;
+		position: fixed;
+		bottom: 50%;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 399px){
+	.artist{
+		height: 50%;
+		width: 50%;
+	}
+	.middle{
+		opacity: 1;
+		position: absolute;
+		top: 200%;
+	}
 }
