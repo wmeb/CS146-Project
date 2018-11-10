@@ -1,0 +1,33 @@
+body {
+    background-color: darkgrey;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    font-size: large;
+    border-radius: .5em;
+}
+
+header > h1 {
+    margin: 0 0 0 0;
+    padding-left: .2em;
+    color: white;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    font-size: medium;
+}
+
+.navbar > ul > li {
+    padding-bottom: .2em;
+}
+
+.navbar > ul > li > a:visited, a:default {
+    color: white;
+}
