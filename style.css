@@ -53,5 +53,7 @@ nav > ul > li > a:visited, a:link {
     max-height: fit-content;
 }
 
-
-
+h2 {
+    color: #b30000;
+    font-size: 20px;
+}
