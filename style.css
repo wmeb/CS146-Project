@@ -43,6 +43,7 @@ nav > ul > li > a:visited, a:link {
     text-align: center;
     color: black;
     margin: 2em 10% 0 10%;
+    line-height: .4em;
 }
 
 
