@@ -7,27 +7,29 @@ header {
     background-color: black;
     display: flex;
     align-items: center;
-    padding-top: .25em;
+    padding-top: 0;
     padding-bottom: .25em;
+    margin: 0;
     font-size: large;
-    border-radius: .5em;
+    border-radius: 0 0 .5em .5em;
 }
 
-header > h1 {
+div > h1 {
+    text-align: center;
     margin: 0 0 0 0;
-    padding-left: .2em;
+    padding-left: .5em;
     color: white;
 }
 
-.navbar > ul {
+nav > ul {
     list-style-type: none;
     font-size: medium;
 }
 
-.navbar > ul > li {
+nav > ul > li {
     padding-bottom: .2em;
 }
 
-.navbar > ul > li > a:visited, a:default {
+nav > ul > li > a:visited, a:link {
     color: white;
 }

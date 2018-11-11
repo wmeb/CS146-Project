@@ -1,17 +1,40 @@
-body{
-	background-color: 
-	gray;
+body {
+    background-color: darkgrey;
+    font-family: sans-serif;
 }
 
-h1{
-	text-align: center;
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: .25em;
+    margin: 0;
+    font-size: large;
+    border-radius: 0 0 .5em .5em;
+}
+
+div > h1 {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-left: .5em;
+    color: white;
+}
+
+nav > ul {
+    list-style-type: none;
+    font-size: medium;
+}
+
+nav > ul > li {
+    padding-bottom: .2em;
+}
+
+nav > ul > li > a:visited, a:link {
+    color: white;
 }
 
 h2{
-	text-align: center;
-}
-
-nav{
 	text-align: center;
 }
 
