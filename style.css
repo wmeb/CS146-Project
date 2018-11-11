@@ -18,12 +18,15 @@ div > h1 {
     text-align: center;
     margin: 0 0 0 0;
     padding-left: .5em;
+    padding-right: .5em;
     color: white;
 }
 
 nav > ul {
     list-style-type: none;
     font-size: medium;
+    padding-left: .25em;
+    padding-right: .25em;
 }
 
 nav > ul > li {
@@ -38,6 +41,7 @@ nav > ul > li > a:visited, a:link {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
+    color: black;
     margin: 2em 10% 0 10%;
 }
 
@@ -49,9 +53,18 @@ nav > ul > li > a:visited, a:link {
     padding-bottom: 1em;
 }
 
-.container > a > img {
-    max-height: fit-content;
+@media screen and (min-width: 400px) and (max-width: 998px){
+    .artists {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
 }
 
-
-
+@media screen and (max-width: 399px){
+    .artists {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
