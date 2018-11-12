@@ -1,0 +1,79 @@
+body {
+    background-color: darkgrey;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: .25em;
+    margin: 0;
+    font-size: large;
+    border-radius: 0 0 .5em .5em;
+}
+
+div > h1 {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-left: .5em;
+    color: white;
+}
+
+nav > ul {
+    list-style-type: none;
+    font-size: medium;
+}
+
+nav > ul > li {
+    padding-bottom: .2em;
+}
+
+nav > ul > li > a:visited, a:link {
+    color: white;
+}
+
+h2{
+	text-align: center;
+}
+
+.artist {
+    position: center;
+    width: 100%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.bio {
+  color: white;
+  font-size: 32px;
+  padding: 16px 32px;
+}
+
+.artist:hover .middle {
+  opacity: 1;
+}
+
+.image{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 30%;
+	height: 30%;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.artist:hover .image {
+  opacity: 0.3;
+}

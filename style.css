@@ -1,0 +1,71 @@
+body {
+    background-color: darkgrey;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: .25em;
+    margin: 0;
+    font-size: large;
+    border-radius: .5em;
+}
+
+div > h1 {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-left: .5em;
+    padding-right: .5em;
+    color: white;
+}
+
+nav > ul {
+    list-style-type: none;
+    font-size: medium;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+nav > ul > li {
+    padding-bottom: .2em;
+}
+
+nav > ul > li > a:visited, a:link {
+    color: white;
+}
+
+.artists {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    color: black;
+    margin: 2em 10% 0 10%;
+    line-height: .4em;
+}
+
+
+.container {
+    background-color: white;
+    margin-bottom: 1em;
+    margin-right: 2%;
+    padding-bottom: 1em;
+}
+
+@media screen and (min-width: 400px) and (max-width: 998px){
+    .artists {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 399px){
+    .artists {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
