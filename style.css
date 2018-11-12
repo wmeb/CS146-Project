@@ -53,6 +53,12 @@ nav > ul > li > a:visited, a:link {
     margin-right: 2%;
     padding-bottom: 1em;
 }
+.WP>li{
+	margin-bottom: 15px;
+}
+.WP>h3, .WP>h4, .WP>div{
+	margin: 0px;
+}
 
 @media screen and (min-width: 400px) and (max-width: 998px){
     .artists {
